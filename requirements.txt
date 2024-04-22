@@ -1,0 +1,7 @@
+Flask
+Flask-Cors==4.0.0
+gpt4all
+langchain==0.0.335
+langchain-community==0.0.11
+requests==2.31.0
+chromadb

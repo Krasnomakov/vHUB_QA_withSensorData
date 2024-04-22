@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+.header img {
+    width: 100px;
+    
+}
+
+.bodyBox {
+    height: 82vh;
+    width: 90%;
+    margin: auto;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+body {
+    background: white;
+    box-shadow: 0 0 7px rgba(0,0,0,0.1);
+    padding: 15px;
+    border-radius: 6px;
+    margin: auto;
+    border: 0.1pt solid rgb(209, 209, 209);
+    max-width: 900px;
+    margin-top: 35px;
+}
+
+p {
+    color: black;
+    font-family: Manrope, sans-serif;
+}
+
+ul {
+    justify-content: space-between;
+} 
+
+li {
+    color: black;
+    font-family: Manrope, sans-serif;
+    line-height: 20pt;
+    margin-bottom: 10px;
+    list-style-type:none;
+    margin-right: 15px;
+}
+
+h1, h2 {
+    font-family: Manrope, sans-serif;
+    font-weight: normal;
+    margin: 0px;
+    margin-left: 35px;
+}
+
+
+
+button {
+    background-color: #2F7EE2;
+    border-radius: 3px;
+    color: white;
+    margin-left: 25px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(214, 100%, 37%); /* Darker color */
+}
+
+button:active {
+    background-color: hsl(214, 100%, 26%); /* Even darker color */
+    box-shadow: 0 2px rgba(102, 102, 102, 0.626);
+    transform: translateY(4px);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    width: 90%;
+    margin: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.inputArea {
+    padding: 10px;
+    background-color: #f0f0f0;
+    position: sticky;
+    bottom: 0;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.inputArea form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+label {
+    font-family: Manrope, sans-serif;
+    font-size: 11pt;
+    margin-left: 20px;
+}
+
+input {
+    width: auto;
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.outputArea {
+    flex: 1; /* Expand to fill remaining space in bodyBox */
+    overflow-y: auto; /* Add scroll if content exceeds height */
+    padding: 20px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: inset 0 0 7px rgba(0,0,0,0.1);
+    border: 0.1pt solid rgb(209, 209, 209);
+    
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>VHUB AI QA</title>
+</head>
+<body>
+    <div class="header">
+        <img src="https://a.storyblok.com/f/118054/480x234/9a6635fd49/wpvh-logo-small.jpg" alt="VHUB AI QA Logo">
+        
+    </div>
+    
+    <div class="bodyBox">
+        
+        <div class="outputArea">
+            {% if memory %}
+                
+                <ul>
+                    {% for entry in memory %}
+                        <li>
+                            <strong>User:</strong> {{ entry.question }}<br>
+                        </li>
+                        <li>
+                            <strong id="ai-answer">AI:</strong> {{ entry.answer }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+        <div class="inputArea">    
+            <form method="post" action="{{ url_for('api') }}">
+                <label for="question">Question input:</label>
+                <input type="text" id="question" name="question" required>
+                <button type="submit">Submit</button>
+                <button id="clearDataButton">Clear Data</button>
+            </form>
+            
+        </div>
+        <script>
+            document.getElementById("clearDataButton").addEventListener("click", function() {
+                fetch("/clear_data", {
+                    method: "POST",
+                })
+                .then(response => response.json())
+                .then(data => alert(data.status))
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
+            });
+            </script>
+            
+    </div>
+    
+</body>
+</html>
