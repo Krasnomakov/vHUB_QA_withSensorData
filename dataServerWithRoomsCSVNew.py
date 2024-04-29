@@ -130,7 +130,7 @@ if __name__ == "__main__":
     for sensor in sensor_list:
         api = {
             "name": sensor,
-            "url": f"https://htc.gbs4u.nl/enteliweb/api/.bacnet/htc/850500/{sensor}?alt=json",
+            "url": f"https://link_here/{sensor}?alt=json",
             "username": username,
             "password": password,
         }
