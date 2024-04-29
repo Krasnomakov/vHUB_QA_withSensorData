@@ -6,6 +6,7 @@ import time
 from flask import Flask, jsonify
 import json
 import keys
+import pandas as pd
 import csv
 import threading
 from threading import Thread
@@ -65,7 +66,6 @@ def save_to_file(data_to_save, filename):
         writer.writeheader()
         writer.writerows(data_to_save)
             
-import pandas as pd
 
 def update_csv_file(filename, sensor_name, room_name, present_value):
     # Load the existing CSV file into a DataFrame
