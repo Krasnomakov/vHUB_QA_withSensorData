@@ -1,6 +1,6 @@
 # WPVH AI Chat Solution
 
-This repository hosts a retrieval QA solution for WPVH AI chat, developed using the Mistral LLM model via the Ollama application.
+This repository hosts a retrieval QA solution for WPVH Eindhoven AI chat, developed using the Mistral LLM model via the Ollama application.
 
 ## Getting Started
 
