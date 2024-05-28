@@ -1,7 +1,7 @@
 Flask
 Flask-Cors
 gpt4all
-langchain==0.0.335
-langchain-community==0.0.11
+langchain
+langchain-community
 requests
 chromadb
