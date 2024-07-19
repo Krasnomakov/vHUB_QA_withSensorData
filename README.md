@@ -2,6 +2,8 @@
 
 This repository hosts a retrieval QA solution for WPVH Eindhoven AI chat, developed using the Mistral LLM model via the Ollama application.
 
+**Demo:** https://vimeo.com/907558591/310a7a27d4
+
 ## Getting Started
 
 1. **Install Ollama**: Visit [Ollama.ai](https://ollama.ai/) to install Ollama. For Windows, use the Docker version. You can find a tutorial [here](https://youtu.be/y13OTgiZXdg?si=sC0X0Lh-OOY1ggHg) and the Docker image [here](https://hub.docker.com/r/ollama/ollama).
