@@ -1,0 +1,37 @@
+
+An AI retrieval QA with sensor data solution was developed for WPVH Eindhoven. This document contains information about deployment options and requirements. 
+
+Local
+Both local deployment options will require Python installed (development done with Python version 3.11). 
+
+Python modules such as Langchain, Flask and others (module installation must be allowed).
+
+LLM models can be downloaded from:
+-  ollama (https://ollama.ai/library , mistral) 
+-  LM studio (https://huggingface.co/TheBloke, mistral GGUF 7B-13B)
+
+Docker deployment doesn’t imply a fully containerised application - Docker is used to run Ollama LLM server on windows. 
+
+Docker: prioritised deployment option; 
+Requirements: locally installed Docker application 
+https://www.docker.com/get-started/ 
+Ollama image: https://hub.docker.com/r/ollama/ollama 
+
+
+LM Studio: alternative which will require code modification
+Requirements: locally installed LM studio 
+https://lmstudio.ai/ 
+Cloud
+Azure deployment allows several options. They are available as subscription plans and pay as you go. 
+
+Azure 
+Relevant services: 
+- App Services (Python Flask app deployment, Quickstart: Deploy a Python (Django or Flask) web app to Azure App Service)
+- AI Studio (connect LLM run by Azure, How to deploy Llama 2 family of large language models with Azure AI Studio)
+- Virtual machine (deploy full-stack inside a linux VM, Virtual Machines (VMs) for Linux and Windows | Microsoft Azure) 
+Linux Server
+Linux server
+- server access
+- ollama (install ollama https://ollama.ai/)
+- Python 3.11
+- allowed to install linux packages and Python modules 

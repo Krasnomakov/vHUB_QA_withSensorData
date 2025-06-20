@@ -85,4 +85,36 @@ Follow these steps to get the project up and running on your local machine.
 
 ## ☁️ Deployment
 
-For deployment options and requirements, refer to the [Google Document](https://docs.google.com/document/d/1LrkOkPiyaTB3qdNpzFsY5K6ZIQ1q8DNc73nApcfB6zU/edit?usp=sharing).
+This document contains information about deployment options and requirements.
+
+### Local Deployment
+Both local deployment options will require Python installed (development done with Python version 3.11). Python modules such as Langchain, Flask and others must be installable.
+
+**LLM models can be downloaded from:**
+- **Ollama**: [https://ollama.ai/library](https://ollama.ai/library) (e.g., mistral)
+- **LM Studio**: [https://huggingface.co/TheBloke](https://huggingface.co/TheBloke) (e.g., mistral GGUF 7B-13B)
+
+#### Docker (Prioritized Option)
+Docker deployment doesn't mean a fully containerised application - Docker is used to run the Ollama LLM server on Windows.
+- **Requirements**: Locally installed Docker application.
+- **Get Docker**: [https://www.docker.com/get-started/](https://www.docker.com/get-started/)
+- **Ollama Image**: [https://hub.docker.com/r/ollama/ollama](https://hub.docker.com/r/ollama/ollama)
+
+#### LM Studio (Alternative)
+This alternative will require code modification.
+- **Requirements**: Locally installed LM Studio.
+- **Get LM Studio**: [https://lmstudio.ai/](https://lmstudio.ai/)
+
+### Cloud Deployment (Azure)
+Azure deployment allows several options. They are available as subscription plans and pay-as-you-go.
+
+**Relevant services:**
+- **App Services**: For Python Flask app deployment. (*Quickstart: Deploy a Python (Django or Flask) web app to Azure App Service*)
+- **AI Studio**: To connect to an LLM run by Azure. (*How to deploy Llama 2 family of large language models with Azure AI Studio*)
+- **Virtual machine**: To deploy the full-stack inside a Linux VM. (*Virtual Machines (VMs) for Linux and Windows | Microsoft Azure*)
+
+### Linux Server
+- Server access
+- Ollama installed ([https://ollama.ai/](https://ollama.ai/))
+- Python 3.11
+- Permission to install Linux packages and Python modules.
