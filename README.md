@@ -36,6 +36,7 @@ Follow these steps to get the project up and running on your local machine.
 - **Python 3.x**
 - **Ollama**: Install from [Ollama.ai](https://ollama.ai/).
   - **For Windows users**: Use the [Docker version of Ollama](https://hub.docker.com/r/ollama/ollama). Tutorial [here](https://youtu.be/y13OTgiZXdg?si=sC0X0Lh-OOY1ggHg).
+    > **Note:** This project was developed before Ollama had a native Windows client. While a native client is now available, these instructions are based on the Docker setup.
 
 ### ⚙️ Installation & Running
 
